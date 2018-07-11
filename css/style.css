@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+#images {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* maybe I'm OCD, but the totally left justified everything was too ugly for me. */

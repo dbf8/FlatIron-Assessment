@@ -1,4 +1,5 @@
 const allComments = []
+
 class Comment {
   constructor(comment, imageId) {
     this.imageId = imageId

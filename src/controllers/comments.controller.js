@@ -19,9 +19,19 @@ class CommentsController {
         let $comment = $(`#comment-description-${index}`).val()
         //prevent blank comments
         if ($comment !== '') {
-          let newComment = new Comment($comment, $imageId)
-          _this.render(newComment)
-        } else {
+          var newComments = allComments.map(comment => comment.comment)
+          if (!newComments.includes($comment)) {
+            let newComment = new Comment($comment, $imageId)
+            console.log(newComment)
+            _this.render(newComment)
+          } else {
+            window.alert('please enter a new comment')
+          }
+        }
+        // grab already entered comments
+
+        // check w/ user input
+        else {
           console.log('this is empty')
         }
       })
